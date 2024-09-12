@@ -2,35 +2,29 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which part of the wave function describes the spatial distribution of the electron's probability density?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Radial part",
+        "b": "Angular part",
+        "c": "Imaginary part",
+        "d": "Real part"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Explanation :  <a href='https://www.pw.live/exams/jee/schrodinger-wave-equation/#:~:text=In%20the%20solution%20of%20the,locations%20within%20the%20quantum%20system.'>here</a>"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "If the transmission coefficient T for a potential barrier is 0.8, what percentage of particles incident on the barrier are reflected? What does the principal quantum number n represent in the context of the hydrogen atom?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Orbital shape",
+        "b": "Orbital orientation",
+        "c": "Energy level",
+        "d": "Electron spin"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "c": "Explanation :  <a href='https://www.doubtnut.com/qna/541059568'>here</a>"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"

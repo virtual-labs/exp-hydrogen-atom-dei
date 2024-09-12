@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Orbital Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-2.9.0.min.js"></script>
 </head>
 <body>
-		<!-- Your code goes here-->
+    <div class="container">
+        <h1>Quantum Orbital Visualizer</h1>
+        <label for="n">Principal Quantum Number (n): </label>
+        <input type="number" id="n" min="1" max="4" value="1"><br><br>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+        <label for="l">Azimuthal Quantum Number (l): </label>
+        <input type="number" id="l" min="0" max="3" value="0"><br><br>
+
+        <label for="m">Magnetic Quantum Number (m): </label>
+        <input type="number" id="m" min="-3" max="3" value="0"><br><br>
+
+        <button id="drawButton">Draw Orbital</button>
+
+        <div id="plot"></div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>

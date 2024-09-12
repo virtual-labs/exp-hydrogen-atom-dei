@@ -1,1 +1,1 @@
-## Experiment name
+## Quantum mechanics of the hydrogen atom
