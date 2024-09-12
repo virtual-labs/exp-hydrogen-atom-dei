@@ -2,35 +2,29 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which equation governs the behavior of electrons within a hydrogen atom?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Newton's second law",
+        "b": "Maxwell's equations",
+        "c": "Schrödinger equation",
+        "d": "Einstein's mass-energy equivalence equation"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "c": "Explanation :  <a href='https://www.sciencedirect.com/topics/mathematics/hydrogen-atom#:~:text=The%20wave%20function%20%CF%88(r,a%20spherical%20polar%20coordinate%20frame.'>here</a>"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which equation describes the behavior of particles encountering potential barriers in quantum mechanics? What does the symbol Ψ(r) represent in the context of the hydrogen atom?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Electron mass",
+        "b": "Electrostatic potential energy",
+        "c": "Electron probability density",
+        "d": "Atomic radius"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "c": "Explanation : <a href='https://www.sciencedirect.com/topics/chemistry/schrodinger-equation#:~:text=the%20molecular%20orbitals-,The%20Schrodinger%20equation%20is%20a%20mathematical%20model%20for%20electrons%20that,as%20orbitals%20or%20electron%2Dclouds.'>here</a>"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
