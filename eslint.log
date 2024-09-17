@@ -1,0 +1,9 @@
+
+/home/runner/work/exp-hydrogen-atom-dei/exp-hydrogen-atom-dei/experiment/simulation/main.js
+  18:5   warning  'Plotly' is not defined        no-undef
+  23:30  warning  'n' is defined but never used  no-unused-vars
+  23:33  warning  'l' is defined but never used  no-unused-vars
+  23:36  warning  'm' is defined but never used  no-unused-vars
+
+✖ 4 problems (0 errors, 4 warnings)
+
