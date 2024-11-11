@@ -1,58 +1,39 @@
-document.getElementById('drawButton').addEventListener('click', drawOrbital);
-
 function drawOrbital() {
     const n = parseInt(document.getElementById('n').value);
     const l = parseInt(document.getElementById('l').value);
     const m = parseInt(document.getElementById('m').value);
-
-    // Validate input values
-    if (l >= n || m > l || m < -l) {
-        alert("Invalid quantum numbers! Make sure: 0 ≤ l < n and -l ≤ m ≤ l.");
-        return;
+  
+    // Get canvas context
+    const canvas = document.getElementById('orbitalCanvas');
+    const ctx = canvas.getContext('2d');
+  
+    // Clear previous drawings
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  
+    // Translate to center of canvas
+    ctx.translate(canvas.width / 2, canvas.height / 2);
+  
+    const maxRadius = Math.min(canvas.width, canvas.height) / 2 - 20;
+    ctx.beginPath();
+    ctx.strokeStyle = '#00ffcc'; // Line color
+    ctx.lineWidth = 1.5; // Line thickness
+  
+    // Generate outline pattern for orbitals
+    for (let i = 0; i <= n * 100; i++) {
+      const angle = (i / (n * 100)) * Math.PI * 2;
+      const radius = (Math.sin(l * angle) * Math.cos(m * angle) + 1) * maxRadius / 2;
+      const x = radius * Math.cos(angle);
+      const y = radius * Math.sin(angle);
+  
+      if (i === 0) {
+        ctx.moveTo(x, y);
+      } else {
+        ctx.lineTo(x, y);
+      }
     }
-
-    // Generate data for visualization
-    const data = generateOrbitalData(n, l, m);
-
-    // Plot the orbital using Plotly.js
-    Plotly.newPlot('plot', data, {
-        margin: { t: 0 }
-    });
-}
-
-function generateOrbitalData(n, l, m) {
-    // This function should generate data based on quantum numbers (n, l, m)
-    // and return an object suitable for Plotly.js plotting.
-    // For simplicity, we use mock data.
-
-    // Create a 3D meshgrid for x, y, z
-    let x = [];
-    let y = [];
-    let z = [];
-    let values = [];
-
-    for (let i = -10; i <= 10; i++) {
-        for (let j = -10; j <= 10; j++) {
-            for (let k = -10; k <= 10; k++) {
-                x.push(i);
-                y.push(j);
-                z.push(k);
-                values.push(Math.sin(i) * Math.sin(j) * Math.sin(k));  // Simplified mock data
-            }
-        }
-    }
-
-    return [{
-        type: 'scatter3d',
-        mode: 'markers',
-        x: x,
-        y: y,
-        z: z,
-        marker: {
-            size: 2,
-            color: values,
-            colorscale: 'Viridis',
-            opacity: 0.8
-        }
-    }];
-}
+  
+    ctx.stroke();
+    ctx.closePath();
+    ctx.resetTransform();
+  }
+  
