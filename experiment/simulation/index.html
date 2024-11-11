@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quantum Orbital Visualizer</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.plot.ly/plotly-2.9.0.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydrogen Orbital Visualizer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Quantum Orbital Visualizer</h1>
-        <label for="n">Principal Quantum Number (n): </label>
-        <input type="number" id="n" min="1" max="4" value="1"><br><br>
+  <div class="container">
+    <h1>Hydrogen Orbital Visualizer</h1>
+    <div class="input-container">
+      <label for="n">Principal Quantum Number (n):</label>
+      <input type="number" id="n" min="1" max="7" value="1">
 
-        <label for="l">Azimuthal Quantum Number (l): </label>
-        <input type="number" id="l" min="0" max="3" value="0"><br><br>
+      <label for="l">Azimuthal Quantum Number (l):</label>
+      <input type="number" id="l" min="0" max="6" value="0">
 
-        <label for="m">Magnetic Quantum Number (m): </label>
-        <input type="number" id="m" min="-3" max="3" value="0"><br><br>
+      <label for="m">Magnetic Quantum Number (m):</label>
+      <input type="number" id="m" min="-6" max="6" value="0">
 
-        <button id="drawButton">Draw Orbital</button>
-
-        <div id="plot"></div>
+      <button onclick="drawOrbital()">Draw Orbital</button>
     </div>
-
-    <script src="main.js"></script>
+    <div class="canvas-container">
+      <canvas id="orbitalCanvas" width="400" height="400"></canvas>
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>
