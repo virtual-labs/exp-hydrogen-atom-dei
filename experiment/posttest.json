@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Which part of the wave function describes the spatial distribution of the electron's probability density?",
+      "question": "1. Which part of the wave function describes the spatial distribution of the electron's probability density?",
       "answers": {
         "a": "Radial part",
         "b": "Angular part",
@@ -16,7 +16,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "If the transmission coefficient T for a potential barrier is 0.8, what percentage of particles incident on the barrier are reflected? What does the principal quantum number n represent in the context of the hydrogen atom?",
+      "question": "2. What does the principal quantum number n represent in the context of the hydrogen atom?",
       "answers": {
         "a": "Orbital shape",
         "b": "Orbital orientation",
@@ -27,6 +27,48 @@
         "c": "Explanation :  <a href='https://www.doubtnut.com/qna/541059568'>here</a>"
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Which quantum number determines the shape of an orbital in the hydrogen atom?",
+      "answers": {
+        "a": "Principal quantum number (n)",
+        "b": "Azimuthal quantum number (l)",
+        "c": "Magnetic quantum number (m)",
+        "d": "Spin quantum number (s)"
+      },
+      "explanations": {
+        "b": "Correct. The azimuthal quantum number l determines the orbital shape (s, p, d, f)."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. What does the magnetic quantum number m determine?",
+      "answers": {
+        "a": "Energy level",
+        "b": "Shape of the orbital",
+        "c": "Orientation of the orbital in space",
+        "d": "Spin orientation of the electron"
+      },
+      "explanations": {
+        "c": "Correct. m determines how the orbital is oriented relative to an external field."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. In the hydrogen atom, the probability of finding an electron is highest at which point for the 1s orbital?",
+      "answers": {
+        "a": "At the nucleus (r = 0)",
+        "b": "At the Bohr radius (r = a₀)",
+        "c": "Half the Bohr radius (r = a₀/2)",
+        "d": "At infinite distance"
+      },
+      "explanations": {
+        "b": "Correct. The radial probability distribution for the 1s orbital peaks at the Bohr radius."
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
