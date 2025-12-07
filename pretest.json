@@ -1,0 +1,75 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which equation governs the behavior of electrons within a hydrogen atom?",
+      "answers": {
+        "a": "Newton's second law",
+        "b": "Maxwell's equations",
+        "c": "Schrödinger equation",
+        "d": "Einstein's mass-energy equivalence equation"
+      },
+      "explanations": {
+        "c": "Explanation :  <a href='https://www.sciencedirect.com/topics/mathematics/hydrogen-atom#:~:text=The%20wave%20function%20%CF%88(r,a%20spherical%20polar%20coordinate%20frame.'>here</a>"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. What does the symbol Ψ(r) represent in the context of the hydrogen atom?",
+      "answers": {
+        "a": "Electron mass",
+        "b": "Electrostatic potential energy",
+        "c": "Electron probability density",
+        "d": "Atomic radius"
+      },
+      "explanations": {
+        "c": "Explanation : <a href='https://www.sciencedirect.com/topics/chemistry/schrodinger-equation#:~:text=the%20molecular%20orbitals-,The%20Schrodinger%20equation%20is%20a%20mathematical%20model%20for%20electrons%20that,as%20orbitals%20or%20electron%2Dclouds.'>here</a>"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Which quantum number determines the shape of the electron orbital in a hydrogen atom?",
+      "answers": {
+        "a": "Principal quantum number (n)",
+        "b": "Azimuthal quantum number (l)",
+        "c": "Magnetic quantum number (m)",
+        "d": "Spin quantum number (s)"
+      },
+      "explanations": {
+        "b": "Correct. The azimuthal quantum number l defines the orbital shape (s, p, d, f)."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. What does the principal quantum number (n) determine in the hydrogen atom?",
+      "answers": {
+        "a": "Spin of the electron",
+        "b": "Orientation of the orbital",
+        "c": "Energy level and size of the orbital",
+        "d": "Shape of the orbital"
+      },
+      "explanations": {
+        "c": "Correct. Higher n means higher energy and larger orbital radius."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. The probability of finding an electron is highest at which point for the hydrogen 1s state?",
+      "answers": {
+        "a": "At the nucleus (r = 0)",
+        "b": "At the Bohr radius (r = a₀)",
+        "c": "Infinity",
+        "d": "Half the Bohr radius (r = a₀/2)"
+      },
+      "explanations": {
+        "b": "Correct. The radial probability density of the 1s orbital peaks at the Bohr radius."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
