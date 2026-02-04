@@ -1,75 +1,175 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "1. Which part of the wave function describes the spatial distribution of the electron's probability density?",
-      "answers": {
-        "a": "Radial part",
-        "b": "Angular part",
-        "c": "Imaginary part",
-        "d": "Real part"
-      },
-      "explanations": {
-        "a": "Explanation :  <a href='https://www.pw.live/exams/jee/schrodinger-wave-equation/#:~:text=In%20the%20solution%20of%20the,locations%20within%20the%20quantum%20system.'>here</a>"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "2. What does the principal quantum number n represent in the context of the hydrogen atom?",
-      "answers": {
-        "a": "Orbital shape",
-        "b": "Orbital orientation",
-        "c": "Energy level",
-        "d": "Electron spin"
-      },
-      "explanations": {
-        "c": "Explanation :  <a href='https://www.doubtnut.com/qna/541059568'>here</a>"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "3. Which quantum number determines the shape of an orbital in the hydrogen atom?",
-      "answers": {
-        "a": "Principal quantum number (n)",
-        "b": "Azimuthal quantum number (l)",
-        "c": "Magnetic quantum number (m)",
-        "d": "Spin quantum number (s)"
-      },
-      "explanations": {
-        "b": "Correct. The azimuthal quantum number l determines the orbital shape (s, p, d, f)."
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "4. What does the magnetic quantum number m determine?",
-      "answers": {
-        "a": "Energy level",
-        "b": "Shape of the orbital",
-        "c": "Orientation of the orbital in space",
-        "d": "Spin orientation of the electron"
-      },
-      "explanations": {
-        "c": "Correct. m determines how the orbital is oriented relative to an external field."
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "5. In the hydrogen atom, the probability of finding an electron is highest at which point for the 1s orbital?",
-      "answers": {
-        "a": "At the nucleus (r = 0)",
-        "b": "At the Bohr radius (r = a₀)",
-        "c": "Half the Bohr radius (r = a₀/2)",
-        "d": "At infinite distance"
-      },
-      "explanations": {
-        "b": "Correct. The radial probability distribution for the 1s orbital peaks at the Bohr radius."
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    }
-  ]
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "In the simulation, when you set n=2 and ℓ=1, what orbital type are you visualizing?",
+            "answers": {
+                "a": "2s orbital",
+                "b": "2p orbital",
+                "c": "2d orbital",
+                "d": "1p orbital"
+            },
+            "explanations": {
+                "a": "Incorrect. 2s would have ℓ=0, not ℓ=1.",
+                "b": "Correct! When n=2 and ℓ=1, you are viewing a 2p orbital. The 'p' corresponds to ℓ=1.",
+                "c": "Incorrect. 2d orbital doesn't exist because ℓ must be less than n, and d-orbitals have ℓ=2.",
+                "d": "Incorrect. 1p doesn't exist because for n=1, the only possible ℓ value is 0."
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "While using the simulation, you observed that the 3s orbital appears larger than the 1s orbital. This is because:",
+            "answers": {
+                "a": "3s has more electrons",
+                "b": "Higher n means the electron is farther from the nucleus on average",
+                "c": "3s has a different shape than 1s",
+                "d": "The simulation is incorrectly scaled"
+            },
+            "explanations": {
+                "a": "Incorrect. In hydrogen, there is only one electron regardless of the orbital.",
+                "b": "Correct! As the principal quantum number (n) increases, the average distance of the electron from the nucleus increases, making the orbital larger.",
+                "c": "Incorrect. Both s-orbitals are spherical; they differ only in size and number of radial nodes.",
+                "d": "Incorrect. The simulation correctly shows that higher n orbitals are larger."
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "When you changed the visualization mode to 'Probability' in the simulation, the dots represent:",
+            "answers": {
+                "a": "Actual electron positions at different times",
+                "b": "Probability density of finding the electron",
+                "c": "Electric field strength",
+                "d": "Nuclear charge distribution"
+            },
+            "explanations": {
+                "a": "Incorrect. We cannot know exact electron positions; this would violate the uncertainty principle.",
+                "b": "Correct! The density of dots represents |ψ|², showing where the electron is most likely to be found. Denser regions indicate higher probability.",
+                "c": "Incorrect. The visualization shows electron probability, not electric field.",
+                "d": "Incorrect. The nucleus is represented by the central point, not the dot distribution."
+            },
+            "correctAnswer": "b",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "In the simulation, you observed that the energy becomes less negative as n increases. What does this indicate?",
+            "answers": {
+                "a": "The electron loses energy",
+                "b": "The electron is less tightly bound to the nucleus",
+                "c": "The orbital becomes smaller",
+                "d": "The electron moves faster"
+            },
+            "explanations": {
+                "a": "Incorrect. Actually, the electron gains energy (becomes less negative = higher energy).",
+                "b": "Correct! Less negative energy means the electron is less tightly bound. It takes less energy to remove an electron from a higher n orbital than from n=1.",
+                "c": "Incorrect. Higher n means larger orbital, not smaller.",
+                "d": "Incorrect. Higher n electrons actually move slower on average due to greater distance from nucleus."
+            },
+            "correctAnswer": "b",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "Using the simulation, you found that for n=3 and ℓ=2, the mₗ slider allows values from -2 to +2. How many distinct 3d orbitals does this represent?",
+            "answers": {
+                "a": "2",
+                "b": "3",
+                "c": "5",
+                "d": "7"
+            },
+            "explanations": {
+                "a": "Incorrect. mₗ ranges from -2 to +2, giving more than 2 orbitals.",
+                "b": "Incorrect. Three orbitals would be for p-subshell (ℓ=1), not d-subshell.",
+                "c": "Correct! For ℓ=2, mₗ can be -2, -1, 0, +1, +2, giving 5 distinct d-orbitals.",
+                "d": "Incorrect. Seven orbitals would be for f-subshell (ℓ=3)."
+            },
+            "correctAnswer": "c",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "The simulation shows that a p-orbital has a dumbbell shape with two lobes. What separates these lobes?",
+            "answers": {
+                "a": "The nucleus",
+                "b": "A nodal plane where ψ = 0",
+                "c": "An energy barrier",
+                "d": "A magnetic field"
+            },
+            "explanations": {
+                "a": "Incorrect. While the nucleus is at the center, it doesn't 'separate' the lobes.",
+                "b": "Correct! P-orbitals have a nodal plane passing through the nucleus where the probability of finding the electron is zero (ψ = 0).",
+                "c": "Incorrect. There is no energy barrier; it's a region of zero probability.",
+                "d": "Incorrect. Magnetic fields affect orbital orientation, not the node between lobes."
+            },
+            "correctAnswer": "b",
+            "difficulty": "advanced"
+        },
+        {
+            "question": "When you clicked on the '4f' preset button in the simulation, which quantum numbers were automatically set?",
+            "answers": {
+                "a": "n=4, ℓ=4, mₗ=0",
+                "b": "n=4, ℓ=3, mₗ=0",
+                "c": "n=3, ℓ=4, mₗ=0",
+                "d": "n=4, ℓ=2, mₗ=0"
+            },
+            "explanations": {
+                "a": "Incorrect. ℓ cannot equal n; ℓ must be less than n.",
+                "b": "Correct! For 4f orbital: n=4 and f corresponds to ℓ=3. The preset sets mₗ=0 as default.",
+                "c": "Incorrect. ℓ cannot exceed (n-1), so ℓ=4 is not possible for n=3.",
+                "d": "Incorrect. ℓ=2 corresponds to d-orbitals, not f-orbitals."
+            },
+            "correctAnswer": "b",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "After completing the simulation, which statement best describes the relationship between quantum numbers and orbital properties?",
+            "answers": {
+                "a": "All quantum numbers equally affect only the energy",
+                "b": "n affects size/energy, ℓ affects shape, mₗ affects orientation",
+                "c": "Quantum numbers only affect the color of the visualization",
+                "d": "Only the principal quantum number matters for orbital properties"
+            },
+            "explanations": {
+                "a": "Incorrect. Each quantum number has distinct effects on different properties.",
+                "b": "Correct! This is the key takeaway: n determines size and energy, ℓ determines shape (s, p, d, f), and mₗ determines spatial orientation.",
+                "c": "Incorrect. Colors in visualization are for display purposes; quantum numbers affect physical properties.",
+                "d": "Incorrect. All three spatial quantum numbers (n, ℓ, mₗ) are necessary to fully describe an orbital."
+            },
+            "correctAnswer": "b",
+            "difficulty": "advanced"
+        },
+        {
+            "question": "The simulation showed that the energy of hydrogen orbitals follows E = -13.6/n² eV. What would be the energy at n = ∞ (ionization)?",
+            "answers": {
+                "a": "-13.6 eV",
+                "b": "-∞ eV",
+                "c": "0 eV",
+                "d": "+13.6 eV"
+            },
+            "explanations": {
+                "a": "Incorrect. -13.6 eV is the ground state energy at n=1.",
+                "b": "Incorrect. As n increases, energy becomes less negative, not more negative.",
+                "c": "Correct! As n→∞, E = -13.6/n² → 0 eV. This represents complete ionization where the electron is free from the nucleus.",
+                "d": "Incorrect. The ionization energy limit is 0 eV, not +13.6 eV."
+            },
+            "correctAnswer": "c",
+            "difficulty": "advanced"
+        },
+        {
+            "question": "Based on your simulation observations, why can't a 2d orbital exist?",
+            "answers": {
+                "a": "d-orbitals require at least 10 electrons",
+                "b": "Because ℓ must be less than n, so for n=2, ℓ can only be 0 or 1",
+                "c": "d-orbitals are only found in transition metals",
+                "d": "The simulation doesn't support d-orbitals"
+            },
+            "explanations": {
+                "a": "Incorrect. The existence of an orbital is independent of how many electrons fill it.",
+                "b": "Correct! Since ℓ can range from 0 to (n-1), for n=2, ℓ can only be 0 (s) or 1 (p). ℓ=2 (d) would require n≥3.",
+                "c": "Incorrect. D-orbitals exist for any atom with n≥3, not just transition metals.",
+                "d": "Incorrect. The simulation supports d-orbitals when you set n≥3 and ℓ=2."
+            },
+            "correctAnswer": "b",
+            "difficulty": "advanced"
+        }
+    ]
 }

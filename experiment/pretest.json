@@ -1,75 +1,141 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "1. Which equation governs the behavior of electrons within a hydrogen atom?",
-      "answers": {
-        "a": "Newton's second law",
-        "b": "Maxwell's equations",
-        "c": "Schrödinger equation",
-        "d": "Einstein's mass-energy equivalence equation"
-      },
-      "explanations": {
-        "c": "Explanation :  <a href='https://www.sciencedirect.com/topics/mathematics/hydrogen-atom#:~:text=The%20wave%20function%20%CF%88(r,a%20spherical%20polar%20coordinate%20frame.'>here</a>"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "2. What does the symbol Ψ(r) represent in the context of the hydrogen atom?",
-      "answers": {
-        "a": "Electron mass",
-        "b": "Electrostatic potential energy",
-        "c": "Electron probability density",
-        "d": "Atomic radius"
-      },
-      "explanations": {
-        "c": "Explanation : <a href='https://www.sciencedirect.com/topics/chemistry/schrodinger-equation#:~:text=the%20molecular%20orbitals-,The%20Schrodinger%20equation%20is%20a%20mathematical%20model%20for%20electrons%20that,as%20orbitals%20or%20electron%2Dclouds.'>here</a>"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "3. Which quantum number determines the shape of the electron orbital in a hydrogen atom?",
-      "answers": {
-        "a": "Principal quantum number (n)",
-        "b": "Azimuthal quantum number (l)",
-        "c": "Magnetic quantum number (m)",
-        "d": "Spin quantum number (s)"
-      },
-      "explanations": {
-        "b": "Correct. The azimuthal quantum number l defines the orbital shape (s, p, d, f)."
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "4. What does the principal quantum number (n) determine in the hydrogen atom?",
-      "answers": {
-        "a": "Spin of the electron",
-        "b": "Orientation of the orbital",
-        "c": "Energy level and size of the orbital",
-        "d": "Shape of the orbital"
-      },
-      "explanations": {
-        "c": "Correct. Higher n means higher energy and larger orbital radius."
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "5. The probability of finding an electron is highest at which point for the hydrogen 1s state?",
-      "answers": {
-        "a": "At the nucleus (r = 0)",
-        "b": "At the Bohr radius (r = a₀)",
-        "c": "Infinity",
-        "d": "Half the Bohr radius (r = a₀/2)"
-      },
-      "explanations": {
-        "b": "Correct. The radial probability density of the 1s orbital peaks at the Bohr radius."
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    }
-  ]
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. What is the principal quantum number (n) responsible for?",
+            "answers": {
+                "a": "Determining the spin of the electron",
+                "b": "Determining the energy level and size of the orbital",
+                "c": "Determining the color of the atom",
+                "d": "Determining the mass of the electron"
+            },
+            "explanations": {
+                "a": "Incorrect. Electron spin is determined by the spin quantum number (mₛ), not the principal quantum number.",
+                "b": "Correct! The principal quantum number (n) determines both the energy level and the size of the atomic orbital. Higher n means higher energy and larger orbital.",
+                "c": "Incorrect. Atoms don't have inherent colors; colors arise from electron transitions between energy levels.",
+                "d": "Incorrect. The mass of the electron is a constant and is not determined by any quantum number."
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "2. For a hydrogen atom, if n = 3, what are the possible values of the azimuthal quantum number (ℓ)?",
+            "answers": {
+                "a": "0, 1, 2, 3",
+                "b": "1, 2, 3",
+                "c": "0, 1, 2",
+                "d": "0, 1"
+            },
+            "explanations": {
+                "a": "Incorrect. The maximum value of ℓ is (n-1), so for n=3, ℓ can be at most 2.",
+                "b": "Incorrect. The azimuthal quantum number starts from 0, not 1.",
+                "c": "Correct! For n = 3, ℓ can have values from 0 to (n-1), which means ℓ = 0, 1, or 2.",
+                "d": "Incorrect. This would be correct for n = 2, but for n = 3, ℓ can also be 2."
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "3. What shape does an s-orbital (ℓ = 0) have?",
+            "answers": {
+                "a": "Dumbbell shape",
+                "b": "Spherical shape",
+                "c": "Cloverleaf shape",
+                "d": "Cone shape"
+            },
+            "explanations": {
+                "a": "Incorrect. Dumbbell shape is characteristic of p-orbitals (ℓ = 1).",
+                "b": "Correct! S-orbitals are spherically symmetric around the nucleus, meaning they have equal probability in all directions.",
+                "c": "Incorrect. Cloverleaf shapes are characteristic of d-orbitals (ℓ = 2).",
+                "d": "Incorrect. No atomic orbital has a cone shape."
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "4. What is the energy of an electron in the ground state (n = 1) of hydrogen?",
+            "answers": {
+                "a": "-3.4 eV",
+                "b": "-1.51 eV",
+                "c": "-13.6 eV",
+                "d": "0 eV"
+            },
+            "explanations": {
+                "a": "Incorrect. -3.4 eV is the energy for n = 2.",
+                "b": "Incorrect. -1.51 eV is the energy for n = 3.",
+                "c": "Correct! The ground state energy of hydrogen is -13.6 eV, calculated using E = -13.6/n² eV.",
+                "d": "Incorrect. Zero energy would mean the electron is completely free; bound electrons have negative energy."
+            },
+            "correctAnswer": "c",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "5. How many p-orbitals exist for any given principal quantum number (n ≥ 2)?",
+            "answers": {
+                "a": "1",
+                "b": "2",
+                "c": "3",
+                "d": "5"
+            },
+            "explanations": {
+                "a": "Incorrect. There is only 1 s-orbital per energy level, not p-orbital.",
+                "b": "Incorrect. Two is not the correct number of p-orbitals.",
+                "c": "Correct! For p-orbitals (ℓ = 1), mₗ can be -1, 0, or +1, giving 3 different p-orbitals (px, py, pz).",
+                "d": "Incorrect. Five orbitals exist for d-subshell (ℓ = 2), not p-subshell."
+            },
+            "correctAnswer": "c",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "6. The magnetic quantum number (mₗ) determines:",
+            "answers": {
+                "a": "The size of the orbital",
+                "b": "The shape of the orbital",
+                "c": "The orientation of the orbital in space",
+                "d": "The energy of the orbital"
+            },
+            "explanations": {
+                "a": "Incorrect. The size of the orbital is determined by the principal quantum number (n).",
+                "b": "Incorrect. The shape is determined by the azimuthal quantum number (ℓ).",
+                "c": "Correct! The magnetic quantum number (mₗ) specifies how an orbital is oriented in 3D space relative to an external magnetic field.",
+                "d": "Incorrect. In hydrogen, energy depends only on n. In multi-electron atoms, both n and ℓ affect energy."
+            },
+            "correctAnswer": "c",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "7. Which quantum number is NOT required to fully describe an atomic orbital?",
+            "answers": {
+                "a": "Principal quantum number (n)",
+                "b": "Azimuthal quantum number (ℓ)",
+                "c": "Magnetic quantum number (mₗ)",
+                "d": "Spin quantum number (mₛ)"
+            },
+            "explanations": {
+                "a": "Incorrect. n is required to define the orbital's energy level and size.",
+                "b": "Incorrect. ℓ is required to define the orbital's shape.",
+                "c": "Incorrect. mₗ is required to define the orbital's orientation.",
+                "d": "Correct! The spin quantum number describes the electron itself, not the orbital. An orbital is fully described by n, ℓ, and mₗ."
+            },
+            "correctAnswer": "d",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "8. According to the Schrödinger equation, what does |ψ|² represent?",
+            "answers": {
+                "a": "The energy of the electron",
+                "b": "The velocity of the electron",
+                "c": "The probability density of finding the electron",
+                "d": "The momentum of the electron"
+            },
+            "explanations": {
+                "a": "Incorrect. Energy is represented by E in the Schrödinger equation.",
+                "b": "Incorrect. The wave function does not directly give velocity.",
+                "c": "Correct! |ψ|² gives the probability density function, which tells us how likely we are to find the electron at a particular location.",
+                "d": "Incorrect. Momentum is related to the derivative of the wave function, not its square."
+            },
+            "correctAnswer": "c",
+            "difficulty": "advanced"
+        }
+    ]
 }
