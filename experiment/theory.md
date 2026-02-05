@@ -1,5 +1,3 @@
-# Theory: Quantum Mechanics of the Hydrogen Atom
-
 ## Introduction
 
 The hydrogen atom, being the simplest atom with only one proton and one electron, serves as the foundation for understanding quantum mechanics. This experiment explores the wave nature of electrons, the concept of orbitals, and the probabilistic nature of electron distribution within the atom.

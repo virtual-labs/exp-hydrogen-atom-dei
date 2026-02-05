@@ -136,6 +136,40 @@
             },
             "correctAnswer": "c",
             "difficulty": "advanced"
+        },
+        {
+            "question": "9. How many radial nodes does a 3s orbital have?",
+            "answers": {
+                "a": "0",
+                "b": "1",
+                "c": "2",
+                "d": "3"
+            },
+            "explanations": {
+                "a": "Incorrect. The 1s orbital has 0 radial nodes, not 3s.",
+                "b": "Incorrect. The 2s orbital has 1 radial node, not 3s.",
+                "c": "Correct! The number of radial nodes = (n - ℓ - 1). For 3s: n=3, ℓ=0, so radial nodes = 3 - 0 - 1 = 2.",
+                "d": "Incorrect. Three would be the total number of nodes (radial + angular), but 3s has no angular nodes."
+            },
+            "correctAnswer": "c",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "10. In a hydrogen atom, which orbitals are degenerate (have the same energy)?",
+            "answers": {
+                "a": "1s and 2s",
+                "b": "2s, 2p",
+                "c": "3s, 3p, 3d",
+                "d": "All orbitals with the same ℓ value"
+            },
+            "explanations": {
+                "a": "Incorrect. Orbitals with different n values have different energies.",
+                "b": "Incorrect. In hydrogen, 2s and 2p have the same energy, but this option doesn't include all degenerate orbitals at n=2.",
+                "c": "Correct! In hydrogen atom, all orbitals with the same principal quantum number (n) are degenerate. So 3s, 3p, and 3d all have energy E = -13.6/9 = -1.51 eV.",
+                "d": "Incorrect. Degeneracy in hydrogen depends on n, not ℓ."
+            },
+            "correctAnswer": "c",
+            "difficulty": "advanced"
         }
     ]
 }
