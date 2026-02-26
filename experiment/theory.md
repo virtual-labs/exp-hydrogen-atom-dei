@@ -17,7 +17,7 @@ Where:
 
 The complete form is:
 
-**[-ℏ²/2m ∇² + V(r)]ψ(r) = Eψ(r)**
+**-ℏ²/2m ∇² + V(r)]ψ(r) = Eψ(r)**
 
 Where:
 - **ℏ** is the reduced Planck constant (h/2π)
