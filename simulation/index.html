@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydrogen Atom Orbital Visualizer | Quantum Mechanics Lab</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="background-effects">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <div class="main-container">
+    <!-- Top Bar -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <span class="atom-icon">⚛️</span>
+        <div class="title-group">
+          <h1>Hydrogen Orbital Visualizer</h1>
+          <span class="subtitle">Explore the Quantum World of Hydrogen Atom</span>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <button class="theme-toggle" id="theme-toggle" title="Toggle Theme">
+          <span class="theme-icon" id="theme-icon">🌙</span>
+        </button>
+        <div class="status-indicator" id="status-indicator">
+          <span class="status-dot running"></span>
+          <span class="status-text">Simulation Running</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-wrapper">
+      <!-- Left Panel - Controls -->
+      <aside class="control-panel glass-card">
+        <h2 class="panel-title">
+          <span class="icon">🎛️</span> Quantum Controls
+        </h2>
+
+        <!-- Principal Quantum Number -->
+        <div class="control-group">
+          <div class="control-header">
+            <label for="n-slider">Principal Quantum Number (n)</label>
+            <span class="value-badge" id="n-value">1</span>
+          </div>
+          <input type="range" id="n-slider" min="1" max="7" value="1" class="slider">
+          <p class="control-info">Determines the <strong>energy level</strong> and size of the orbital. Higher n =
+            larger orbital.</p>
+        </div>
+
+        <!-- Azimuthal Quantum Number -->
+        <div class="control-group">
+          <div class="control-header">
+            <label for="l-slider">Azimuthal Quantum Number (ℓ)</label>
+            <span class="value-badge" id="l-value">0</span>
+          </div>
+          <input type="range" id="l-slider" min="0" max="0" value="0" class="slider">
+          <p class="control-info">Determines the <strong>shape</strong> of the orbital (s, p, d, f).</p>
+        </div>
+
+        <!-- Magnetic Quantum Number -->
+        <div class="control-group">
+          <div class="control-header">
+            <label for="m-slider">Magnetic Quantum Number (mₗ)</label>
+            <span class="value-badge" id="m-value">0</span>
+          </div>
+          <input type="range" id="m-slider" min="0" max="0" value="0" class="slider">
+          <p class="control-info">Determines the <strong>orientation</strong> of the orbital in space.</p>
+        </div>
+
+        <!-- Quick Presets -->
+        <div class="presets-section">
+          <h3 class="section-title">⚡ Quick Orbital Presets</h3>
+          <div class="preset-grid">
+            <button class="preset-btn" data-n="1" data-l="0" data-m="0">1s</button>
+            <button class="preset-btn" data-n="2" data-l="0" data-m="0">2s</button>
+            <button class="preset-btn" data-n="2" data-l="1" data-m="0">2p</button>
+            <button class="preset-btn" data-n="3" data-l="0" data-m="0">3s</button>
+            <button class="preset-btn" data-n="3" data-l="1" data-m="0">3p</button>
+            <button class="preset-btn" data-n="3" data-l="2" data-m="0">3d</button>
+            <button class="preset-btn" data-n="4" data-l="0" data-m="0">4s</button>
+            <button class="preset-btn" data-n="4" data-l="1" data-m="0">4p</button>
+            <button class="preset-btn" data-n="4" data-l="2" data-m="0">4d</button>
+            <button class="preset-btn" data-n="4" data-l="3" data-m="0">4f</button>
+          </div>
+        </div>
+
+        <!-- View Options -->
+        <div class="view-options">
+          <h3 class="section-title">👁️ Visualization Mode</h3>
+          <div class="view-buttons">
+            <button class="view-btn active" data-mode="outline">Outline</button>
+            <button class="view-btn" data-mode="filled">Filled</button>
+            <button class="view-btn" data-mode="probability">Probability</button>
+          </div>
+        </div>
+
+        <!-- Animation Toggle -->
+        <div class="animation-toggle">
+          <label class="toggle-container">
+            <input type="checkbox" id="animate-toggle" checked>
+            <span class="toggle-slider"></span>
+            <span class="toggle-label">🔄 Auto Rotate</span>
+          </label>
+        </div>
+      </aside>
+
+      <!-- Center - Visualization -->
+      <main class="visualization-area">
+        <div class="canvas-wrapper glass-card">
+          <canvas id="orbitalCanvas" width="500" height="500"></canvas>
+          <div class="canvas-overlay">
+            <span class="orbital-label" id="orbital-label">1s Orbital</span>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+          <button class="action-btn primary" id="draw-btn">
+            <span>🎨</span> Draw Orbital
+          </button>
+          <button class="action-btn secondary" id="reset-btn">
+            <span>🔄</span> Reset
+          </button>
+          <button class="action-btn secondary" id="screenshot-btn">
+            <span>📸</span> Screenshot
+          </button>
+        </div>
+      </main>
+
+      <!-- Right Panel - Information -->
+      <aside class="info-panel glass-card">
+        <h2 class="panel-title">
+          <span class="icon">📊</span> Orbital Information
+        </h2>
+
+        <!-- Current Orbital Info -->
+        <div class="info-card highlight-card">
+          <h3 id="current-orbital">1s Orbital</h3>
+          <div class="orbital-type-badge" id="orbital-type-badge">s-orbital</div>
+        </div>
+
+        <!-- Energy Level -->
+        <div class="info-card">
+          <div class="info-row">
+            <span class="info-label">⚡ Energy Level (E)</span>
+            <span class="info-value" id="energy-value">-13.6 eV</span>
+          </div>
+          <div class="energy-bar">
+            <div class="energy-fill" id="energy-fill" style="width: 100%"></div>
+          </div>
+        </div>
+
+        <!-- Quantum Numbers Summary -->
+        <div class="info-card">
+          <h4>📐 Quantum Numbers</h4>
+          <div class="quantum-grid">
+            <div class="quantum-item">
+              <span class="q-symbol">n</span>
+              <span class="q-value" id="q-n">1</span>
+              <span class="q-name">Principal</span>
+            </div>
+            <div class="quantum-item">
+              <span class="q-symbol">ℓ</span>
+              <span class="q-value" id="q-l">0</span>
+              <span class="q-name">Azimuthal</span>
+            </div>
+            <div class="quantum-item">
+              <span class="q-symbol">mₗ</span>
+              <span class="q-value" id="q-m">0</span>
+              <span class="q-name">Magnetic</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Orbital Shape Info -->
+        <div class="info-card explanation-card">
+          <h4>💡 Did You Know?</h4>
+          <p id="orbital-explanation">
+            The 1s orbital is spherically symmetric around the nucleus. It has no angular nodes and represents the
+            ground state of the hydrogen atom with the lowest energy.
+          </p>
+        </div>
+
+        <!-- Rules Reminder -->
+        <div class="info-card rules-card">
+          <h4>📜 Quantum Number Rules</h4>
+          <ul class="rules-list">
+            <li><strong>n:</strong> 1, 2, 3, ... (positive integers)</li>
+            <li><strong>ℓ:</strong> 0 to (n-1)</li>
+            <li><strong>mₗ:</strong> -ℓ to +ℓ</li>
+          </ul>
+        </div>
+
+        <!-- Electron Configuration -->
+        <div class="info-card">
+          <h4>🔬 Electron Configuration</h4>
+          <div class="config-display" id="electron-config">
+            <span class="config-notation">1s<sup>1</sup></span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+<script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+
+</html>
