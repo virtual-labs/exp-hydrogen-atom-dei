@@ -1,6 +1,6 @@
 ### Part 1: Understanding the Interface
 
-1. **Open the Simulation** - Access the Hydrogen Orbital Visualizer in your web browser
+1. **Begin the Simulation** - Access the Hydrogen Orbital Visualizer in your web browser
 2. **Familiarize with Controls**:
    - **Principal Quantum Number (n)**: Slider from 1 to 7
    - **Azimuthal Quantum Number (ℓ)**: Slider from 0 to (n-1)
