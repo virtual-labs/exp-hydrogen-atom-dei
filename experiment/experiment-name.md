@@ -1,1 +1,1 @@
-## Quantum mechanics of the hydrogen atom
+## Quantum Mechanics of the Hydrogen Atom
