@@ -16,7 +16,8 @@
    https://openstax.org/details/books/university-physics-volume-3  
    (Chapter 8: Introductory orbitals, Bohr model comparison)
 
-6. Ghatak, A. K., & Lokanathan, S. (2004). *Quantum Mechanics: Theory and Applications* (5th ed.). Macmillan Publishers India Limited.
+6. Ghatak, A. K., & Lokanathan, S. (2004). *Quantum Mechanics: Theory and Applications* (5th ed.). Macmillan Publishers India Limited.</br>
+   (Chapter 10: spherically symmetric potentials)
 
 ---
 
